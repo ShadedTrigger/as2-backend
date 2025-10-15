@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const contactRoute = require("../server/routes/contactRoute");
+const contactsRoute = require("../server/routes/contactsRoute");
+const educationsRoute = require("../server/routes/educationsRoute");
 dotenv.config();
 
 const app = express();
@@ -18,7 +19,8 @@ app.get("/", (req, res) => {
     res.json({ message: app.message });
 });
 
-app.use("/contacts", contactRoute);
+app.use("/contacts", contactsRoute);
+app.use("/educations", educationsRoute);
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("API is up at " + (process.env.PORT || 3000));
