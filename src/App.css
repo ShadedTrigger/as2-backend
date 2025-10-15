@@ -1,0 +1,159 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+/* Nav bar styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #393E46;
+  padding: 1em 0;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 2em;
+}
+
+nav a {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  color: #EEEEEE;
+  text-decoration: inherit;
+}
+
+nav a:hover {
+  background: #00ADB5;
+  color: #393E46
+}
+
+/* Styles for the buttons on home page and projects pages */
+.buttons {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.buttons a {
+  width: 150px;
+  color: #00ADB5;
+  background-color: #393E46;
+  padding: 1em 0;
+  border-radius: 8px 8px 8px 8px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 2em;
+}
+
+/* Styles for grids used in Projects and Services pages */
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* The links on the home page to go to About Me, and Projects pages */
+.homeLinks a:hover {
+  background: #00ADB5;
+  color: #393E46
+}
+
+.missionStatement {
+  padding-top: 2em;
+  font-size: 2.5em;
+  color: #00ADB5;
+}
+
+/* About me page */
+.aboutMeContainer, .projectsDescriptionContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 2em auto;
+}
+
+.aboutMe {
+  flex: 2;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: left;
+  text-indent: 2em;
+  margin: 0;
+  max-width: none;
+}
+
+.portrait {
+  flex: 1;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects pages */
+.project1Image,
+.project2Image,
+.project3Image {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Services page */
+ul {
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 400px;
+  margin: 2em auto;
+}
+
+.horizontalList {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+/* Contact page */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
